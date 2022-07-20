@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html><head><meta name="GCD" content="YTk3ODQ3ZWZhN2I4NzZmMzBkNTEwYjJla3a48fdf9e5a95a18bd14c781db079e7"/>
+<html><head><meta name="GCD" content="YTk3ODQ3ZWZhN2I4NzZmMzBkNTEwYjJlcc8318082de0328bc980c8af8d74bb2b"/>
   <meta charset="utf-8">
   <meta name="generator" content="Google Web Designer 14.0.4.1108">
   <meta name="template" content="Banner 3.0.0">
@@ -121,6 +121,7 @@ body {
     transform: rotateZ(-90.2086deg) rotateY(-40.5deg) rotateX(-39.6102deg);
     -webkit-transform: rotateZ(-90.2086deg) rotateY(-40.5deg) rotateX(-39.6102deg);
     -moz-transform: rotateZ(-90.2086deg) rotateY(-40.5deg) rotateX(-39.6102deg);
+    top: 100px;
 }
 @keyframes gwd-gen-d0dbgwdanimation_gwd-keyframes {
     0% {
@@ -182,7 +183,6 @@ body {
 }
 .gwd-rect-uxew {
     position: absolute;
-    left: 0px;
     width: 500px;
     box-sizing: border-box;
     border-style: solid;
@@ -190,10 +190,11 @@ body {
     transform-origin: 50% 50% 0px;
     -webkit-transform-origin: 50% 50% 0px;
     -moz-transform-origin: 50% 50% 0px;
-    top: 0px;
     height: 500px;
     opacity: 0;
     border-width: 0px;
+    left: 0px;
+    top: 0px;
 }
 .gwd-rect-12ei {
     position: absolute;
@@ -209,6 +210,43 @@ body {
     height: 500px;
     border-width: 0px;
     opacity: 0;
+}
+.gwd-rect-1e42 {
+    position: absolute;
+    width: 299px;
+    height: 49px;
+    box-sizing: border-box;
+    border-style: solid;
+    border-color: rgb(0, 0, 0);
+    border-width: 0px;
+    background-image: none;
+    background-color: rgb(66, 133, 244);
+    border-radius: 10px;
+    left: 100px;
+    top: 386px;
+}
+.gwd-image-srw4 {
+    transform: rotateZ(0deg) rotateY(0deg) rotateX(0deg);
+    -webkit-transform: rotateZ(0deg) rotateY(0deg) rotateX(0deg);
+    -moz-transform: rotateZ(0deg) rotateY(0deg) rotateX(0deg);
+    top: 100px;
+}
+.gwd-span-18rc {
+    position: absolute;
+    height: 49px;
+    width: 235px;
+    transform-origin: 50% 50% 0px;
+    -webkit-transform-origin: 50% 50% 0px;
+    -moz-transform-origin: 50% 50% 0px;
+    text-align: center;
+    left: 132px;
+    font-family: "Open Sans";
+    color: rgb(255, 255, 255);
+    font-size: 23px;
+    top: 390px;
+}
+.gwd-image-a809 {
+    top: 100px;
 }
 @media (min-width: 497px) and (max-width: 503px) and (min-height: 497px) and (max-height: 503px) {}</style><style type="text/css" data-gwd-secondary-animations="">#page1_2.gwd-play-animation .event-1-animation {
     animation: 0.4s linear 0s 1 normal forwards gwd-empty-animation;
@@ -239,6 +277,7 @@ body {
         opacity: 0;
     }
 }</style>
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:regular" rel="stylesheet" type="text/css">
   <script data-source="googbase_min.js" data-version="4" data-exports-type="googbase">(function(){/*
 
  Copyright The Closure Library Authors.
@@ -421,6 +460,14 @@ set:function(a){this.g.height=a}},width:{configurable:!0,enumerable:!0,get:funct
       // GWD Predefined Function
       gwd.actions.gwdPagedeck.goToPage('pagedeck', 'page1_2', 'none', 1000, 'linear', 'top');
     };
+    gwd.auto_Hoverarea2Mouseover = function(event) {
+      // GWD Predefined Function
+      gwd.actions.events.setInlineStyle('button2', 'transition: all 0.5s ease-in-out; background-color: #A0C3FF;');
+    };
+    gwd.auto_Hoverarea2Mouseleave1 = function(event) {
+      // GWD Predefined Function
+      gwd.actions.events.setInlineStyle('button2', 'transition: all 0.5s ease-in-out; background-color:  #4285F4;');
+    };
   </script>
   <script type="text/javascript" gwd-events="registration">
     // Support code for event handling in Google Web Designer
@@ -429,12 +476,16 @@ set:function(a){this.g.height=a}},width:{configurable:!0,enumerable:!0,get:funct
       gwd.actions.events.addHandler('page1_2', 'event-1', gwd.auto_Page1_2Event_1, false);
       gwd.actions.events.addHandler('hoverarea1', 'mouseover', gwd.auto_Hoverarea1Mouseenter, false);
       gwd.actions.events.addHandler('hoverarea2', 'mouseout', gwd.auto_Hoverarea2Mouseleave, false);
+      gwd.actions.events.addHandler('hoverarea2', 'mouseenter', gwd.auto_Hoverarea2Mouseover, false);
+      gwd.actions.events.addHandler('hoverarea2', 'mouseleave', gwd.auto_Hoverarea2Mouseleave1, false);
       gwd.actions.timeline.captureAnimationEnd(document.body);
     };
     gwd.actions.events.deregisterEventHandlers = function(event) {
       gwd.actions.events.removeHandler('page1_2', 'event-1', gwd.auto_Page1_2Event_1, false);
       gwd.actions.events.removeHandler('hoverarea1', 'mouseover', gwd.auto_Hoverarea1Mouseenter, false);
       gwd.actions.events.removeHandler('hoverarea2', 'mouseout', gwd.auto_Hoverarea2Mouseleave, false);
+      gwd.actions.events.removeHandler('hoverarea2', 'mouseenter', gwd.auto_Hoverarea2Mouseover, false);
+      gwd.actions.events.removeHandler('hoverarea2', 'mouseleave', gwd.auto_Hoverarea2Mouseleave1, false);
       gwd.actions.timeline.releaseAnimationEnd(document.body);
     };
     document.addEventListener("DOMContentLoaded", gwd.actions.events.registerEventHandlers);
@@ -444,17 +495,18 @@ set:function(a){this.g.height=a}},width:{configurable:!0,enumerable:!0,get:funct
 
 <body>
   <gwd-google-ad id="gwd-ad" polite-load="">
-    <gwd-metric-configuration></gwd-metric-configuration>
     <gwd-pagedeck class="gwd-page-container" id="pagedeck">
       <gwd-page id="page1" class="gwd-page-wrapper gwd-page-size gwd-lightbox" data-gwd-width="100%" data-gwd-height="100%">
         <div class="gwd-page-content gwd-page-size">
-          <gwd-image id="google-photos-6" source="google-photos-6.svg" scaling="stretch" class="gwd-image-c4f8"></gwd-image>
+          <gwd-image id="google-photos-6" source="google-photos-6.svg" scaling="stretch" class="gwd-image-c4f8 gwd-image-a809"></gwd-image>
+          <svg data-gwd-shape="rectangle" class="gwd-rect-1e42" id="button1"></svg><span class="gwd-span-18rc">Media Library</span>
           <svg data-gwd-shape="rectangle" class="gwd-rect-12ei" id="hoverarea1"></svg>
         </div>
       </gwd-page>
       <gwd-page id="page1_1" class="gwd-page-wrapper gwd-page-size gwd-lightbox" data-gwd-width="100%" data-gwd-height="100%">
         <div class="gwd-page-content gwd-page-size">
-          <gwd-image id="google-photos-6_1" source="google-photos-6.svg" scaling="stretch" class="gwd-image-c4f8 gwd-image-lrgd gwd-gen-18cegwdanimation"></gwd-image>
+          <gwd-image id="google-photos-6_1" source="google-photos-6.svg" scaling="stretch" class="gwd-image-c4f8 gwd-image-lrgd gwd-gen-18cegwdanimation gwd-image-srw4"></gwd-image>
+          <svg data-gwd-shape="rectangle" class="gwd-rect-1e42" id="button2"></svg><span class="gwd-span-18rc">Media Library</span>
           <svg data-gwd-shape="rectangle" class="gwd-rect-uxew" id="hoverarea2"></svg>
         </div>
       </gwd-page>
@@ -462,6 +514,7 @@ set:function(a){this.g.height=a}},width:{configurable:!0,enumerable:!0,get:funct
         <div class="gwd-page-content gwd-page-size">
           <gwd-image id="google-photos-6_2" source="google-photos-6.svg" scaling="stretch" class="gwd-image-c4f8 gwd-image-lrgd gwd-image-1xvb gwd-gen-d0dbgwdanimation"></gwd-image>
           <div class="gwd-animation-event event-1-animation" data-event-name="event-1" data-event-time="400"></div>
+          <svg data-gwd-shape="rectangle" class="gwd-rect-1e42"></svg><span class="gwd-span-18rc">Media Library</span>
           <svg data-gwd-shape="rectangle" class="gwd-rect-1n22"></svg>
         </div>
       </gwd-page>
